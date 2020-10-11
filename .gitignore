@@ -1,0 +1,9 @@
+/assets/
+/cocotools/
+/models/
+/dev/
+/datasets/
+/resources/
+/mrcnn/
+/datasets/pantograph/train/annotations/*.bmp
+/datasets/pantograph/val/annotations/*.bmp
