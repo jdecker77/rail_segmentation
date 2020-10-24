@@ -11,4 +11,5 @@ ppe = Flask(__name__)
 # ___________________________________________________________________________________________
 @ppe.route('/', methods=['GET'])
 def render_index():
-    return render_template('index.html')
+    title = 'Pantograph Pose Estimation'
+    return render_template('index.html', page_title=title)

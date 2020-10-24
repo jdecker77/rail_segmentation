@@ -2,28 +2,48 @@
 <html lang="en">
 <head>
 
-    <title>JesseDecker</title>
+    <title>{{ page_title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='skeleton.css') }}">
+    <!-- # this is the proper order -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='design.css') }}">
 
 </head>
 
 
 
 <body>
-    <header>
-        <div class="centerwide">
-            <h1><a href='/'>Pantograph Pose Estimation</a></h1>
-        </div>
-    </header>
+    <div id="middle_container">
 
-    <div>
-        <!-- <a href="/chimera">Chimera</a> -->
+        <nav class="navbar">
+            <div class="">
+                
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a href="/" class="nav-link navbar-brand">Home</a>  
+                    </li>
+
+                    <li class="nav-item">
+                        <p class="nav-link navbar-brand">{{ page_title }}</p>  
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id='links' class="row">
+
+            <a href="{{ url_for('static', filename='pantograph_pose_estimation.pdf') }}">Download Pantograph Pose Estimation Paper</a>
+
+        </div>
+
     </div>
 
 </body>
