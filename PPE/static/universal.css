@@ -84,6 +84,10 @@ hr{
     border-width:1px 0 0 0;
 }
 
+.active {
+  background-color: #5D0C5D;
+}
+
 /*----------------------------------------*/
 
 a:link{
@@ -103,7 +107,7 @@ p{
     margin-bottom: .5em;
 }
 
-#middle_container{
+#outer_container{
     min-width: 300px;
     max-width: 960px;
     margin: 0 auto;
@@ -166,36 +170,14 @@ p{
   margin-bottom: 0;
 }
 
-.active {
-  background-color: #5D0C5D;
-}
-
-.projectCard{
-    border: 1px solid #ccc;
-    /*background-color: #eee;*/
-    padding: 1.25em;
-    overflow:  auto;
-    box-shadow: 3px 3px 2px #ccc;
-}
-
-.projectCard img{
-    max-width: 100%;
-    margin-bottom: 1em;
-    border:1px solid #ccc;
-}
-
-.projectCard a:link{
-    text-decoration: none;
-}
 
 
-.projectCard a:hover{
-    /*background-color: #ccc;*/
-}
+/*---------------------------------*/
 
 #links{
     width: 60%;
-    /*border-left: 1px solid #ccc;*/
+    border-left: 1px solid #ccc;
+    padding-top:0;
     /*padding-left:10px;*/
     /*background-color: yellow;*/
 }
@@ -204,18 +186,21 @@ p{
     margin-left:0;
 }
 #links ul li{
-    /*padding-bottom: .5em;*/
+    padding-bottom: .5em;
     border-bottom:1px solid #ccc;
-    margin-bottom: 1em;
 }
-#links ul li a{
-    font-size: 1.2308em;
-    margin-bottom: .5em;
+#links ul li h3{
+    margin-bottom: .25em;
+    font-weight: 400;
+    font-size: .99em;
 }
 
 #links ul li p{
     margin-bottom: .5em;
-    padding-top:.25em;
+}
+#links ul li a{
+    font-size: 1.2308em;
+    margin-bottom: .5em;
 }
 
 #links ul.tags{
@@ -231,36 +216,3 @@ p{
     display: none;
 }
 
-#jsform input{
-    background-color: white;
-    border:none;
-    color:#074df2;
-    padding:0;
-    font-weight: 500;
-    font-size: 1.2308em; /* 16px */
-    line-height: 1.125em; /* 18px */
-    margin-top: 1.125em;
-    margin-bottom: .25em; 
-}
-#jsform input:hover{
-    text-decoration: underline;
-}
-
-.column {
-    height: 140px;
-    overflow: hidden;
-}
-#myModal{
-    /*overflow:visible;*/
-    clear:both;
-}
-
-#description h4{
-    font-size: 1.2em;
-    font-weight: 500;
-    margin-bottom:.5em;
-}
-
-#description p{
-    max-width: 650px;
-}

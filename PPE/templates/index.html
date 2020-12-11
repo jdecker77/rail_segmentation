@@ -3,22 +3,29 @@
 <head>
 
     <title>{{ page_title }}</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static',filename='favicon.png') }}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-
-    <!-- # this is the proper order -->
+    <!-- # Order = reset, universal, site specific -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='universal.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='design.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='jquery.tagit.css') }}"> -->
+
+    <!-- Tagit plugin -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ url_for('static', filename='tag-it.js') }}" type="text/javascript" charset="utf-8"></script> -->
 
 </head>
 
 
 
 <body>
-    <div id="middle_container">
+    <div id="outer_container">
 
         <nav class="navbar">
             <div class="">
